@@ -12,22 +12,22 @@
   </a>
 </p>
 
-<h1 align="center">Nestjs Typeorm paginate</h1>
+<h1 align="center">NestJS Typeorm Paginate</h1>
 
 Pagination helper method for TypeORM repositories or queryBuilders with strict typings
 
 ## Install
 
 ```bash
-$ yarn add nestjs-typeorm-paginate
+$ yarn add @appotter/nestjs-typeorm-paginate
 ```
 or
 ```bash
-$ npm i nestjs-typeorm-paginate
+$ npm i --save @appotter/nestjs-typeorm-paginate
 ```
 
-> If you're using typeorm^0.2.6 please use nestjs-typeorm-paginate^3.2.0
-> For typeorm^0.3.0 please use nestjs-typeorm-paginate^4.0.0
+> If you're using typeorm^0.2.6 please use @appotter/nestjs-typeorm-paginate^3.2.0
+> For typeorm^0.3.0 please use @appotter/nestjs-typeorm-paginate^4.0.0
 
 ## Usage
 
@@ -44,7 +44,7 @@ import {
   paginate,
   Pagination,
   IPaginationOptions,
-} from 'nestjs-typeorm-paginate';
+} from '@appotter/nestjs-typeorm-paginate';
 
 @Injectable()
 export class CatService {
@@ -70,7 +70,7 @@ import {
   paginate,
   Pagination,
   IPaginationOptions,
-} from 'nestjs-typeorm-paginate';
+} from '@appotter/nestjs-typeorm-paginate';
 
 @Injectable()
 export class CatService {
@@ -94,7 +94,7 @@ export class CatService {
 import { Controller, DefaultValuePipe, Get, ParseIntPipe, Query } from '@nestjs/common';
 import { CatService } from './cat.service';
 import { CatEntity } from './cat.entity';
-import { Pagination } from 'nestjs-typeorm-paginate';
+import { Pagination } from '@appotter/nestjs-typeorm-paginate';
 
 @Controller('cats')
 export class CatsController {

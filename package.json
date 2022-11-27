@@ -1,7 +1,8 @@
 {
   "name": "@appotter/nestjs-typeorm-paginate",
+  "version": "4.0.2",
   "author": "Ashleigh Simonelli <ashleighsimonelli@gmail.com>, Phitsanu Chuamuangphan <ap.phitsanu@gmail.com, contact@phitsanu.ch>",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/appotter/nestjs-typeorm-paginate.git"
@@ -13,6 +14,9 @@
     "pagination",
     "paginate"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
@@ -34,7 +38,7 @@
   "scripts": {
     "format": "prettier --write \"**/*.ts\"",
     "setup:test": "node_modules/.bin/ts-node node_modules/.bin/typeorm schema:sync",
-    "test": "jest --runInBand",
+    "test": "jest --runInBand --detectOpenHandles",
     "coveralls": "yarn run test:cov --coverageReporters=text-lcov | coveralls",
     "test:cov": "jest --coverage",
     "build": "rm -rf ./dist && tsc && npm run build:index",
@@ -61,6 +65,5 @@
     },
     "coverageDirectory": "../coverage"
   },
-  "version": "4.0.4",
   "dependencies": {}
 }

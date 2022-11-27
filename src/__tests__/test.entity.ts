@@ -1,4 +1,10 @@
-import { PrimaryColumn, Entity, OneToMany, ManyToMany, JoinTable } from 'typeorm';
+import {
+  PrimaryColumn,
+  Entity,
+  OneToMany,
+  ManyToMany,
+  JoinTable,
+} from 'typeorm';
 import { TestPivotEntity } from './test-pivot.entity';
 import { TestRelatedEntity } from './test-related.entity';
 

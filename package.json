@@ -1,6 +1,6 @@
 {
   "name": "@appotter/nestjs-typeorm-paginate",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "author": "Ashleigh Simonelli <ashleighsimonelli@gmail.com>, Phitsanu Chuamuangphan <ap.phitsanu@gmail.com, contact@phitsanu.ch>",
   "main": "dist/index.js",
   "repository": {

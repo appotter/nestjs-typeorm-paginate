@@ -1,14 +1,14 @@
-import { PrimaryColumn, Entity, OneToMany, ManyToMany, JoinTable } from 'typeorm';
-import { TestPivotEntity } from './test-pivot.entity';
-import { TestRelatedEntity } from './test-related.entity';
+import { PrimaryColumn, Entity, OneToMany, ManyToMany, JoinTable } from 'typeorm'
+import { TestPivotEntity } from './test-pivot.entity'
+import { TestRelatedEntity } from './test-related.entity'
 
 @Entity()
 export class TestEntity {
   @PrimaryColumn()
-  id: number;
+  id: number
 
   @OneToMany(() => TestRelatedEntity, (related) => related.test)
-  related: TestRelatedEntity[];
+  related: TestRelatedEntity[]
 
   @ManyToMany(() => TestPivotEntity, (testPivots) => testPivots.tests)
   @JoinTable({
@@ -22,5 +22,5 @@ export class TestEntity {
       referencedColumnName: 'id',
     },
   })
-  testPivots: TestPivotEntity[];
+  testPivots: TestPivotEntity[]
 }

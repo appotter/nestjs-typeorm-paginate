@@ -9,6 +9,6 @@ export const baseOrmConfigs: TypeOrmModuleOptions = {
   port: 3306,
   type: 'mysql',
   username: 'root',
-  password: '',
-  database: 'test',
+  password: 'root',
+  database: 'test_typeorm_paginate',
 };
